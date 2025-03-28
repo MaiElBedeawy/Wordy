@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "455341770822",
+    "project_id": "wordy-d48f2",
+    "storage_bucket": "wordy-d48f2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:455341770822:android:d34a2fdbabdb295c45e247",
+        "android_client_info": {
+          "package_name": "com.maielbedeawy.wordy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbMf2QICctkywpsQ5Ar7Jvj7vXP2JDDyA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

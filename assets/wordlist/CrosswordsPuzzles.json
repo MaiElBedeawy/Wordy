@@ -1,0 +1,232 @@
+{
+  "words": [
+    {
+      "clue": "The capital of France",
+      "answer": "PARIS",
+      "position": [0, 0],
+      "direction": "across"
+    },
+    {
+      "clue": "A red fruit",
+      "answer": "APPLE",
+      "position": [1, 2],
+      "direction": "down"
+    },
+    {
+      "clue": "A family animal",
+      "answer": "PET",
+      "position": [3, 4],
+      "direction": "down"
+    },
+    {
+      "clue": "Totals",
+      "answer": "ADDS",
+      "position": [3, 4],
+      "direction": "down"
+    },
+    {
+      "clue": "Music for two",
+      "answer": "DUET",
+      "position": [3, 4],
+      "direction": "down"
+    },
+    {
+      "clue": "Calamity",
+      "answer": "DISASTER",
+      "position": [3, 4],
+      "direction": "down"
+    },
+    {
+      "clue": "Lane",
+      "answer": "STREET",
+      "position": [3, 4],
+      "direction": "down"
+    },
+    {
+      "clue": "Worth having",
+      "answer": "DESIRABLE",
+      "position": [3, 4],
+      "direction": "down"
+    },
+    {
+      "clue": "Send a letter",
+      "answer": "MAIL",
+      "position": [3, 4],
+      "direction": "down"
+    },
+    {
+      "clue": "Walk cautiously",
+      "answer": "TIPTOE",
+      "position": [3, 4],
+      "direction": "down"
+    },
+    {
+      "clue": "Asian Mountain",
+      "answer": "EVEREST",
+      "position": [3, 4],
+      "direction": "down"
+    },
+    {
+      "clue": "Freed",
+      "answer": "RELEASED",
+      "position": [3, 4],
+      "direction": "down"
+    },
+    {
+      "clue": "Impel",
+      "answer": "URGE",
+      "position": [3, 4],
+      "direction": "down"
+    },
+    {
+      "clue": "Groups",
+      "answer": "SETS",
+      "position": [3, 4],
+      "direction": "down"
+    },
+    {
+      "clue": "Border",
+      "answer": "EDGE",
+      "position": [3, 4],
+      "direction": "down"
+    },
+    {
+      "clue": "Opposite of cold",
+      "answer": "HOT",
+      "position": [4, 1],
+      "direction": "across"
+    },
+    {
+      "clue": "A large body of water",
+      "answer": "OCEAN",
+      "position": [5, 2],
+      "direction": "down"
+    },
+    {
+      "clue": "A celestial body",
+      "answer": "PLANET",
+      "position": [6, 3],
+      "direction": "across"
+    },
+    {
+      "clue": "An object that orbits a planet",
+      "answer": "MOON",
+      "position": [7, 4],
+      "direction": "down"
+    },
+    {
+      "clue": "An optical instrument used for viewing distant objects",
+      "answer": "TELESCOPE",
+      "position": [8, 5],
+      "direction": "across"
+    },
+    {
+      "clue": "To cook food over an open flame",
+      "answer": "GRILL",
+      "position": [9, 6],
+      "direction": "down"
+    },
+    {
+      "clue": "A mythical fire-breathing creature",
+      "answer": "DRAGON",
+      "position": [10, 7],
+      "direction": "across"
+    },
+    {
+      "clue": "An underground transportation system",
+      "answer": "SUBWAY",
+      "position": [11, 8],
+      "direction": "down"
+    },
+    {
+      "clue": "A liquid used for painting",
+      "answer": "PAINT",
+      "position": [12, 9],
+      "direction": "across"
+    },
+    {
+      "clue": "A bird known for its ability to mimic sounds",
+      "answer": "PARROT",
+      "position": [13, 10],
+      "direction": "down"
+    },
+    {
+      "clue": "A large cat with stripes",
+      "answer": "TIGER",
+      "position": [14, 11],
+      "direction": "across"
+    },
+    {
+      "clue": "The process of buying and selling",
+      "answer": "TRADE",
+      "position": [2, 3],
+      "direction": "down"
+    },
+    {
+      "clue": "An ancient Egyptian ruler",
+      "answer": "PHARAOH",
+      "position": [3, 4],
+      "direction": "across"
+    },
+    {
+      "clue": "A tool used for cutting wood",
+      "answer": "SAW",
+      "position": [5, 5],
+      "direction": "down"
+    },
+    {
+      "clue": "A place where planes land and take off",
+      "answer": "AIRPORT",
+      "position": [6, 6],
+      "direction": "across"
+    },
+    {
+      "clue": "A large flightless bird",
+      "answer": "OSTRICH",
+      "position": [7, 7],
+      "direction": "down"
+    },
+    {
+      "clue": "The color of grass",
+      "answer": "GREEN",
+      "position": [8, 8],
+      "direction": "across"
+    },
+    {
+      "clue": "A domesticated farm animal",
+      "answer": "COW",
+      "position": [9, 9],
+      "direction": "down"
+    },
+    {
+      "clue": "An organ that pumps blood",
+      "answer": "HEART",
+      "position": [10, 10],
+      "direction": "across"
+    },
+    {
+      "clue": "A famous painter known for the Mona Lisa",
+      "answer": "DAVINCI",
+      "position": [11, 11],
+      "direction": "down"
+    },
+    {
+      "clue": "A small insect that makes honey",
+      "answer": "BEE",
+      "position": [12, 12],
+      "direction": "across"
+    },
+    {
+      "clue": "A famous wizard from a book series",
+      "answer": "HARRY",
+      "position": [13, 13],
+      "direction": "down"
+    },
+    {
+      "clue": "The capital of Japan",
+      "answer": "TOKYO",
+      "position": [14, 14],
+      "direction": "across"
+    }
+  ]
+}
