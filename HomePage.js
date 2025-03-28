@@ -220,32 +220,6 @@ export default function HomePage() {
   };
 
   // Save daily progress to Firestore via cloud function
-  // const handleSaveProgressToFirebase = async (coins, completedPuzzleType, puzzleDate) => {
-  //   const user = auth.currentUser;
-  //
-  //   if (!user) {
-  //     console.log("User not logged in!");
-  //     return;
-  //   }
-  //
-  //   const saveProgress = httpsCallable(functions, 'saveUserProgress');
-  //
-  //   try {
-  //     const result = await saveProgress({
-  //       currentLevel: 'Daily Puzzle',
-  //       coins,
-  //       completedPuzzleType,
-  //       puzzleDate,
-  //     });
-  //
-  //     if (result.data.success) {
-  //       console.log('Daily puzzle progress saved successfully!');
-  //     }
-  //   } catch (error) {
-  //     console.error('Error saving daily puzzle progress:', error);
-  //   }
-  // };
-
   const handleSaveProgressToFirebase = async (completedLevels, currentLevel, coins) => {
     const saveProgressToCloud = httpsCallable(functions, 'saveUserProgress');
     const user = auth.currentUser;
@@ -254,8 +228,6 @@ export default function HomePage() {
     console.log("Saving progress for UID:", effectiveUID);
 
     try {
-      // const currentLevel = await AsyncStorage.getItem('currentLevel');
-      // const completedLevels = await AsyncStorage.getItem('completedLevels');
       let currentLevelStr = await AsyncStorage.getItem('currentLevel');
       let parsedLevel = parseInt(currentLevelStr, 10);
       if (isNaN(parsedLevel)) parsedLevel = 1; // fallback
@@ -340,7 +312,8 @@ export default function HomePage() {
   }, [response]);
 
   // REMOVE AFTER TESTING ------------------- Resetting the daily puzzle to make it not daily during testing the app
-  // TEMP: Reset daily puzzle during testing. Leaving it for testing purposes
+  // TEMP: Reset daily puzzle during testing. I am Leaving it for testing purposes
+  // COMMENT THIS IF YOU WANT TO MAKE THE DAILY PUZZLES SOLVES ONLY ONCE PER DAY
   useEffect(() => {
     const clearDailyPuzzle = async () => {
       await AsyncStorage.removeItem('dailyPuzzle'); // Clears stored puzzle
@@ -394,6 +367,7 @@ export default function HomePage() {
 
   // REMOVE BEFORE PUBLISING ----------------------------------- Resetting user progress when running the app again to test
   // TEMP: Reset user progress during testing
+  // COMMENT THIS IF U WANT THE USER PROGRESS AND COINS NOT TO BE RESTARTED EVERYTIME YOU RUN THE PROJECT
   useEffect(() => {
     const resetCoinsForTesting = async () => {
       await AsyncStorage.setItem('coins', '10'); // Reset coins to 10 on every Expo restart

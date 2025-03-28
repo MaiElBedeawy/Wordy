@@ -191,7 +191,7 @@ export default function ScrambledLetters({ route, navigation }) {
 
     return { board, wordPositions };  // Return the board and word positions
   };
-  
+
   // Placing words
   const placeWord = (board, word, startRow, startCol, direction, rows, cols, wordPositions) => {
     const letters = word.toUpperCase().split('');
@@ -735,7 +735,6 @@ export default function ScrambledLetters({ route, navigation }) {
 
           // As the setFoundWords state update is asynchronous and might not immediately reflect the newly added word
           else if (foundWords.length + 1 === missingWords.length && !foundWords.includes(word.toLowerCase()) && boardSize !== "timed") {
-            // completeLevel(level);
             Alert.alert("Congratulations!", "You found all the words!", [
               {
                 text: "OK",
