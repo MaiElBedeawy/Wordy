@@ -19,6 +19,8 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Asset } from 'expo-asset';
 import { doc, setDoc } from 'firebase/firestore';
 import { functions, httpsCallable, db } from './firebaseConfig';
+import { useFocusEffect } from '@react-navigation/native';
+
 
 // Automatically completes Facebook auth sessions
 WebBrowser.maybeCompleteAuthSession();
@@ -257,6 +259,26 @@ export default function HomePage() {
     }
   };
 
+  // A hook to refresh the daily puzzle
+  useFocusEffect(
+    React.useCallback(() => {
+      const refreshPuzzleStatus = async () => {
+        const storedPuzzleData = await AsyncStorage.getItem('dailyPuzzle');
+        if (storedPuzzleData) {
+          const { date, puzzle, completed } = JSON.parse(storedPuzzleData);
+          const today = new Date().toISOString().split('T')[0];
+
+          if (date === today) {
+            setDailyPuzzle(puzzle);
+            setPuzzleCompleted(completed);
+          }
+        }
+      };
+
+      refreshPuzzleStatus();
+    }, [])
+  );
+
   // Preload assets
   useEffect(() => {
     const loadAssets = async () => {
@@ -313,15 +335,15 @@ export default function HomePage() {
 
   // REMOVE AFTER TESTING ------------------- Resetting the daily puzzle to make it not daily during testing the app
   // TEMP: Reset daily puzzle during testing. I am Leaving it for testing purposes
-  // COMMENT THIS IF YOU WANT TO MAKE THE DAILY PUZZLES SOLVES ONLY ONCE PER DAY
-  useEffect(() => {
-    const clearDailyPuzzle = async () => {
-      await AsyncStorage.removeItem('dailyPuzzle'); // Clears stored puzzle
-      console.log("Daily puzzle storage cleared!");
-    };
-
-    clearDailyPuzzle();
-  }, []);
+  // UNCOMMENT THIS IF YOU WANT TO MAKE THE DAILY PUZZLES SOLVES MORE THAN ONCE PER DAY
+  // useEffect(() => {
+  //   const clearDailyPuzzle = async () => {
+  //     await AsyncStorage.removeItem('dailyPuzzle'); // Clears stored puzzle
+  //     console.log("Daily puzzle storage cleared!");
+  //   };
+  //
+  //   clearDailyPuzzle();
+  // }, []);
   // ---------------------------------------------------
 
   // Load level and coin data from local storage
